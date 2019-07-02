@@ -1,0 +1,2 @@
+﻿add-migration -o Data\PokemonMigrations
+Update-Database

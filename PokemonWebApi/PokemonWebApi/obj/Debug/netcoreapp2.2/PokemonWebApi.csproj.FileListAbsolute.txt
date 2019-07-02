@@ -1,0 +1,28 @@
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.deps.json
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.runtimeconfig.json
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.runtimeconfig.dev.json
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.dll
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorAssemblyInfo.cache
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorAssemblyInfo.cs
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.AssemblyInfoInputs.cache
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.AssemblyInfo.cs
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.pdb
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.dll
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.pdb
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.csprojAssemblyReference.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.deps.json
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.runtimeconfig.json
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.runtimeconfig.dev.json
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.dll
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\bin\Debug\netcoreapp2.2\PokemonWebApi.pdb
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.csprojAssemblyReference.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorAssemblyInfo.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorAssemblyInfo.cs
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.AssemblyInfoInputs.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.AssemblyInfo.cs
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.dll
+C:\Users\Neronic\Desktop\New folder\PokemonWebApi\PokemonWebApi\obj\Debug\netcoreapp2.2\PokemonWebApi.pdb

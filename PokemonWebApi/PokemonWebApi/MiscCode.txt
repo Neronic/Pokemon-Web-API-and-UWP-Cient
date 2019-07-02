@@ -1,0 +1,19 @@
+﻿Unavailable
+
+Requires Trade
+
+Special Event
+
+Requires Game Completion
+
+Evolution
+
+
+new Pokemon
+                        {
+                            Name = "",
+                            Number = ,
+                            Description = "",
+                            TypeID = context.Types.FirstOrDefault(t => t.TypeName == "").ID,
+							RouteID = context.Route.FirstOrDefault(r => r.RouteName == "").ID
+                        },

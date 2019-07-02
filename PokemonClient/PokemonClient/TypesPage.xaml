@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="PokemonClient.TypesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PokemonClient"
+    xmlns:data="using:PokemonClient.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/poke23.jpg" Opacity="0.1"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Types" FontSize="25" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Grid x:Name="MasterPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel x:Name="TypesSearchPanel" Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="Search for your Type:" Margin="0,0,0,6"/>
+                <SearchBox x:Name="typesSearchBar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                           PlaceholderText="Enter a type..." QuerySubmitted="TypesSearchBar_QuerySubmitted" SearchHistoryEnabled="False"/>
+            </StackPanel>
+            
+            <GridView Name="TypesList" Margin="30,0,0,0"
+                  Grid.Row="1" ItemClick="TypesList_ItemClick"
+                  IsItemClickEnabled="True"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Center">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:Types">
+                        <StackPanel Width="200">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{x:Bind TypeOne}"
+                                           Grid.Column="0"
+                                           HorizontalAlignment="Left"
+                                           FontSize="20"
+                                           Margin="10, 10, 10, 10"/>
+                                <TextBlock Text="{x:Bind TypeTwo}"
+                                           Grid.Column="1"
+                                           HorizontalAlignment="Right"
+                                           FontSize="20"
+                                           Margin="0,10,10,10"/>
+                            </Grid>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+
+        <ProgressRing x:Name="progRing" Grid.Row="1" Width="60" Height="60"/>
+        <RelativePanel Grid.Row="2">
+            <Button x:Name="btnRefresh" Content="Refresh" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                    Click="BtnRefresh_Click" Margin="10,10,10,10"/>
+            <Button x:Name="btnBack" Content="Back" RelativePanel.AlignLeftWithPanel="False" Click="BtnBack_Click"
+                    Margin="10,10,10,10"/>
+            <Button x:Name="btnAdd" Content="New Type" RelativePanel.RightOf="btnRefresh"
+                    Click="BtnAdd_Click" Margin="10,10,10,10"/>
+        </RelativePanel>
+    </Grid>
+</Page>

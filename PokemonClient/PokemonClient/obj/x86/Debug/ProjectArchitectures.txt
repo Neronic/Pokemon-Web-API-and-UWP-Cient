@@ -1,0 +1,1 @@
+C:\Users\Neronic\Desktop\JacobFields_SupplementalProject\PokemonClient\PokemonClient\PokemonClient.csproj;x86

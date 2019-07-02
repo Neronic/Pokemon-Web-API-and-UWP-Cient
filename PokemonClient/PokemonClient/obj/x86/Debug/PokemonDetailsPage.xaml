@@ -1,0 +1,84 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="PokemonClient.PokemonDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PokemonClient"
+    xmlns:data="using:PokemonClient.Models"
+    xmlns:Converters="using:PokemonClient.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Converters:IntToStringConverter x:Key="IntToStringConverter"/>
+    </Page.Resources>
+    
+    <Grid x:ConnectionId='2' x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/poke3.jpg" Opacity="0.1"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:ConnectionId='3' x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Pokémon" FontSize="25" HorizontalAlignment="Center"/>
+            <TextBlock x:ConnectionId='19' x:Name="txtTitle" Text="Edit Pokemon" FontSize="20" Margin="12,17,0,28"/>
+        </StackPanel>
+
+        <Grid x:ConnectionId='4' x:Name="ContentPanel" Grid.Row="1" Margin="10,0,0,0">
+            <Grid x:ConnectionId='5' x:Name="pokemonContentGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock x:ConnectionId='6' Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="3,0,0,0"
+                           VerticalAlignment="Center" Name="pokemonNameTextBlock" Text="Pokemon:"/>
+                <TextBox x:ConnectionId='7' Grid.Row="0" Grid.Column="1" Height="30" Name="pokemonNameTextBox"
+                         MaxLength="30" InputScope="Text"                                        AcceptsReturn="False"/>
+
+                <TextBlock x:ConnectionId='8' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="3,0,0,0"
+                           VerticalAlignment="Center" Name="pokemonNumberTextBlock" Text="No.:"/>
+                <TextBox x:ConnectionId='9' Grid.Row="1" Grid.Column="1" Height="30" Name="pokemonNumberTextBox"
+                     InputScope="Number"                                                                                           AcceptsReturn="False"/>
+
+                <TextBlock x:ConnectionId='10' Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="3,0,0,0"
+                           VerticalAlignment="Center" Name="pokemonDescTextBlock" Text="Description:"/>
+                <TextBox x:ConnectionId='11' Grid.Row="2" Grid.Column="1" Height="60" FontSize="11" Name="pokemonDescTextBox"
+                           InputScope="Text"                                               AcceptsReturn="False" TextWrapping="Wrap"/>
+
+                <TextBlock x:ConnectionId='12' Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Margin="3,0,0,0"
+                           VerticalAlignment="Center" Name="TypesTextBlock" Text="Types:"/>
+                <ComboBox x:ConnectionId='13' x:Name="TypesCombo" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" DisplayMemberPath="TypeName"
+                          SelectedValuePath="ID"                                                   />
+
+                <TextBlock x:ConnectionId='14' Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" Margin="3,0,0,0"
+                           VerticalAlignment="Center" Name="RouteTextBlock" Text="Obtain via:"/>
+                <ComboBox x:ConnectionId='15' x:Name="RouteCombo" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" DisplayMemberPath="RouteName"
+                          SelectedValuePath="ID"                                                   />
+
+                <RelativePanel Grid.Row="6" Grid.ColumnSpan="2">
+                    <Button x:ConnectionId='16' x:Name="btnDelete" Content="Delete" RelativePanel.LeftOf="btnSave"
+                                                    Margin="6,6,6,6"/>
+                    <Button x:ConnectionId='17' x:Name="btnSave" Content="Save" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                                  Margin="6,6,6,6"/>
+                    <Button x:ConnectionId='18' x:Name="btnCancel" Content="Cancel" RelativePanel.RightOf="btnSave"
+                                                    Margin="6,6,6,6"/>
+                </RelativePanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+
